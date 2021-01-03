@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+}
+body {
+  background-color: #ecf0f1;
+  color: lightsalmon;
+  /* transition: color 0.5s ease-in-out; */
+}
+.btn {
+  cursor: pointer;
+}
+.clicked {
+  color: tomato !important;
+}
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* width: 97vw; */
+  height: 100%;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
